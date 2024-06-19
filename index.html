@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juego de memoria con temática de insectos">
+    <title>Juego de memoria Tukari</title>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://memoriatukari.cgwis.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Juego de memoria">
+    <meta property="og:description" content="Juego de memoria con temática de insectos">
+    <meta property="og:image" content="./imagenes/imagenRedesTukari.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="memoriatukari.cgwis.com">
+    <meta property="twitter:url" content="https://memoriatukari.cgwis.com">
+    <meta name="twitter:title" content="Juego de memoria">
+    <meta name="twitter:description" content="Juego de memoria con temática de insectos">
+    <meta name="twitter:image" content="./imagenes/imagenRedesTukari.png">
+    <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./imagenes/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego de memoria Tukari</title>
+</head>
+
+<body>
+    <main>
+        <section class="seccion1">
+            <h1>Juego de memoria Tukari</h1>
+            <table>
+                <tr>
+                    <td><button id="0" onclick="destapar(0)"></button></td>
+                    <td><button id="1" onclick="destapar(1)"></button></td>
+                    <td><button id="2" onclick="destapar(2)"></button></td>
+                    <td><button id="3" onclick="destapar(3)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="4" onclick="destapar(4)"></button></td>
+                    <td><button id="5" onclick="destapar(5)"></button></td>
+                    <td><button id="6" onclick="destapar(6)"></button></td>
+                    <td><button id="7" onclick="destapar(7)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="8" onclick="destapar(8)"></button></td>
+                    <td><button id="9" onclick="destapar(9)"></button></td>
+                    <td><button id="10" onclick="destapar(10)"></button></td>
+                    <td><button id="11" onclick="destapar(11)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="12" onclick="destapar(12)"></button></td>
+                    <td><button id="13" onclick="destapar(13)"></button></td>
+                    <td><button id="14" onclick="destapar(14)"></button></td>
+                    <td><button id="15" onclick="destapar(15)"></button></td>
+                </tr>
+            </table>
+
+        </section>
+        <section class="seccion2">
+            <h2 id="aciertos" class="estadisticas">Aciertos: 0</h2>
+            <h2 id="tiempoRestante" class="estadisticas">Tiempo: 45 segundos</h2>
+            <h2 id="movimientos" class="estadisticas">Movimientos: 0</h2>
+        </section>
+    </main>
+    <footer>
+        <section class="Footer" id="footerSection">
+            <p class="CursorNone" style="color: #55a505;">Realizado por<br>CGWIS</p>
+            <div>
+                <a href="https://cgwis.com" target="_blank" translate="no" title="Link to cgwis.com" rel="noopener"><img
+                        class="linkedinImage" src="https://cgwis.com/img/creditos/CGlogo.png" alt="cgwis.com image"
+                        width="40px" height="40px"></a>
+            </div>
+        </section>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
