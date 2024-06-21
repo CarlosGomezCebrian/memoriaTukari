@@ -7,7 +7,7 @@ let segundoResultado = null;
 let movimientos = 0;
 let aciertos = 0;
 let temporizador = false;
-let timer = 45;
+let timer = 60;
 let timerInicial = 30;
 let fantastico = timerInicial - timer;
 let tiempoRegesivoId = null;
@@ -21,7 +21,7 @@ let mostrarTiempo = document.getElementById("tiempoRestante")
 //Generacion de numeros aleatorios
 let numeros = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
 numeros = numeros.sort(() => { return Math.random() - 0.5 });
-console.log(numeros);
+//console.log(numeros);
 
 //Funciones
 function contarTiempo() {
@@ -55,7 +55,7 @@ function destapar(id) {
         temporizador = true;
     }
     tarjetasDestapadas++;
-    console.log(tarjetasDestapadas);
+    //console.log(tarjetasDestapadas);
 
     if (tarjetasDestapadas == 1) {
         //mostrar primer numero
@@ -70,7 +70,7 @@ function destapar(id) {
         tarjeta2 = document.getElementById(id);
         segundoResultado = numeros[id];
         tarjeta2.innerHTML =`<img src="imagenes/${segundoResultado}.png" alt="">`;
-        //desabilita el segindo boton
+        //desabilita el segundo boton
         tarjeta2.disabled = true;
 
         //incrementar movimientos
